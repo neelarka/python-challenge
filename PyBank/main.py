@@ -50,3 +50,4 @@ Greatest_Decrease = min(change)
 index_min = (change.index(min(change)) + 1)
 greatest_decrease_date = (date[index_min])
 print("The Greatest Decrease in Profits " + greatest_decrease_date  + " (" + str(Greatest_Decrease) + ")" )
+
