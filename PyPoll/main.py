@@ -85,11 +85,13 @@ print("--------------------")
 text_file = open("Output_PyPoll.txt", "w")
 
 text_file.write("Election Results \n" )
+text_file.write("\n--------------------")
 text_file.write("The Total Votes : " + str(length) + "\n")
+text_file.write("\n--------------------")
 text_file.write("Khan: " + str("%.3f" % percentage_Khan)  + " (" + str(length1)+ ")" )
 text_file.write("\n Li: " + str("%.3f" % percentage_Li)  + " (" + str(length3)+ ")" )
 text_file.write("\n O'Tooley: " + str("%.3f" % percentage_O_Tooley)  + " (" + str(length4)+ ") \n" )
-
+text_file.write("\n--------------------")
 winner = max(length1, length2, length3, length4)
 if winner == length1 :
     text_file.write(" Winner : " + "Khan" )
