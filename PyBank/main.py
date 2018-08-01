@@ -42,7 +42,7 @@ print("The average change : " + str("%.2f" % average_change))
 Greatest_Increase = max(change)
 index_max = (change.index(max(change)) + 1)
 greatest_increase_date = (date[index_max])
-print("The Greatest Decrease in Profits " + greatest_increase_date  + " (" + str(Greatest_Increase) + ")" )
+print("The Greatest Increase in Profits " + greatest_increase_date  + " (" + str(Greatest_Increase) + ")" )
 
 # Greatest Decrease in Profit
 
@@ -51,3 +51,11 @@ index_min = (change.index(min(change)) + 1)
 greatest_decrease_date = (date[index_min])
 print("The Greatest Decrease in Profits " + greatest_decrease_date  + " (" + str(Greatest_Decrease) + ")" )
 
+text_file = open("Output.txt", "w")
+
+text_file.write("Financial Analysis" + "\n --------------------")
+text_file.write("The Total months : " + str(length))
+text_file.write("The average change : " + str("%.2f" % average_change))
+text_file.write("The Greatest Increase in Profits " + greatest_increase_date  + " (" + str(Greatest_Increase) + ")")
+text_file.write("The Greatest Decrease in Profits " + greatest_decrease_date  + " (" + str(Greatest_Decrease) + ")")
+text_file.close()
