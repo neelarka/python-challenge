@@ -85,7 +85,7 @@ print("--------------------")
 text_file = open("Output_PyPoll.txt", "w")
 
 text_file.write("Election Results \n" )
-text_file.write("\n--------------------")
+text_file.write("\n--------------------\n")
 text_file.write("The Total Votes : " + str(length) + "\n")
 text_file.write("\n--------------------\n")
 text_file.write("Khan: " + str("%.3f" % percentage_Khan)  + " (" + str(length1)+ ")" )
