@@ -54,8 +54,8 @@ print("The Greatest Decrease in Profits " + greatest_decrease_date  + " (" + str
 text_file = open("Output.txt", "w")
 
 text_file.write("Financial Analysis" + "\n --------------------")
-text_file.write("The Total months : " + str(length))
-text_file.write("The average change : " + str("%.2f" % average_change))
-text_file.write("The Greatest Increase in Profits " + greatest_increase_date  + " (" + str(Greatest_Increase) + ")")
-text_file.write("The Greatest Decrease in Profits " + greatest_decrease_date  + " (" + str(Greatest_Decrease) + ")")
+text_file.write("\n The Total months : " + str(length))
+text_file.write("\n The average change : " + str("%.2f" % average_change))
+text_file.write("\n The Greatest Increase in Profits " + greatest_increase_date  + " (" + str(Greatest_Increase) + ")")
+text_file.write("\n The Greatest Decrease in Profits " + greatest_decrease_date  + " (" + str(Greatest_Decrease) + ")")
 text_file.close()
