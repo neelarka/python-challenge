@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import re
 # Make a reference to the paragraph_1.txt file path
-filepath = Path("../../"Desktop")
+filepath = Path("../../Desktop")
 filename = "paragraph_1.txt"
 path_to_file = os.path.join(filepath, filename)
 # Opening the paragraph_1.txt file to print
