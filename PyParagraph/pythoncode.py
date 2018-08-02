@@ -57,9 +57,9 @@ print("Approximate Sentence Length : " + str(average_sentence_length ))
 
 text_file = open("Output_PyParagraph.txt", "w")
 
-text_file.write("Paragraph Analysis" + "\n --------------------")
+text_file.write("Paragraph Analysis" + "\n --------------------\n")
 text_file.write(" Approximate word count : " + str(words_count))
-text_file.write("Approximate Sentence Count : " + str(sentence_count))
-text_file.write("Approximate Letter Count : " + str(letter_count))
-text_file.write("Approximate Sentence Length : " + str(average_sentence_length ))
+text_file.write("\nApproximate Sentence Count : " + str(sentence_count))
+text_file.write("\nApproximate Letter Count : " + str(letter_count))
+text_file.write("\nApproximate Sentence Length : " + str(average_sentence_length ))
 text_file.close()
